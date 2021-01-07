@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="hello" class="com.xat.service.Hello">
+            <property name="str" value="MySpring"></property>
+        </bean>
+        <bean id="address" class="com.xat.di.Address">
+            <property name="address" value="上海市"></property>
+        </bean>
+        <bean id="student" class="com.xat.di.Student">
+            <property name="age" value="20"></property>
+            <property name="name" value="张三"></property>
+            <!--bean注入-->
+            <property name="address" ref="address"></property>
+            <!--null注入-->
+            <property name="wife">
+                <null></null>
+            </property>
+            <!--map注入-->
+            <property name="hobbyMap">
+                <map>
+                    <entry key="有氧运动" value="慢跑"></entry>
+                    <entry key="无氧运动" value="短跑"></entry>
+                </map>
+            </property>
+            <!--List注入-->
+            <property name="books" >
+                <list>
+                    <value>红楼梦</value>
+                    <value>三国演义</value>
+                </list>
+            </property>
+            <!--Set注入-->
+            <property name="courses">
+                <set>
+                    <value>英语</value>
+                    <value>高数</value>
+                    <value>模电</value>
+                </set>
+            </property>
+            <!--数组注入-->
+            <property name="games">
+                <array>
+                    <value>王者荣耀</value>
+                    <value>和平精英</value>
+                </array>
+            </property>
+            <property name="information">
+                <props>
+                    <prop key="drivers">com.jdbc.drivers</prop>
+                    <prop key="url">mysql:3306.jdbc</prop>
+                    <prop key="user">root</prop>
+                    <prop key="password">123</prop>
+                </props>
+            </property>
+        </bean>
+
+
+</beans>
