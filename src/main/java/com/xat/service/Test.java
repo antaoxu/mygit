@@ -8,5 +8,6 @@ public class Test {
         ApplicationContext context=new ClassPathXmlApplicationContext("beans1.xml");
         Hello hello= (Hello) context.getBean("hello");
         System.out.println(hello);
+        System.out.println("dev分支");
     }
 }
