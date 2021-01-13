@@ -9,5 +9,6 @@ public class Test {
         Hello hello= (Hello) context.getBean("hello");
         System.out.println(hello);
         System.out.println("dev分支");
+        System.out.println("feature 分支");
     }
 }
