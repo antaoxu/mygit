@@ -21,6 +21,7 @@ public class MyRequest {
         String str = "";
         if((lenth = inputStream.read(buffer))>0){
             str = new String(buffer,0,lenth);
+            System.out.println("请求数据为：\n"+str);
         }
         //GET / HTTP/1.0
         String data = str.split("\n")[0];
