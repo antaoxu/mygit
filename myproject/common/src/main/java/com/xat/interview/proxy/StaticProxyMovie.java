@@ -2,14 +2,16 @@ package com.xat.interview.proxy;
 
 public class StaticProxyMovie implements Movie {
     Movie movie;
-    public StaticProxyMovie(){}
 
-    public StaticProxyMovie(Movie movie){
-        this.movie=movie;
+    public StaticProxyMovie() {
+    }
+
+    public StaticProxyMovie(Movie movie) {
+        this.movie = movie;
     }
 
     @Override
-    public void play(){
+    public void play() {
         beforPlay();
         movie.play();
         stopPlay();

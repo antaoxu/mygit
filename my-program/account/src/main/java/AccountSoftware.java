@@ -16,12 +16,12 @@ public class AccountSoftware {
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入你要选择的功能：");
         int choice = scanner.nextInt();
-        while (choice > 4){
+        while (choice > 4) {
             System.out.println("输入错误，请重新选择！");
             int newChoice = scanner.nextInt();
             choice = newChoice;
         }
-        switch (choice){
+        switch (choice) {
             case 1:
                 System.out.println("收支明细：");
                 break;
@@ -36,19 +36,6 @@ public class AccountSoftware {
                 return;
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         System.out.println("~~~~~小鲨鱼记账系统~~~~~");

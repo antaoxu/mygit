@@ -9,9 +9,8 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * 加载配置文件
- * 
+ *
  * @author duxiaoyang
- * 
  */
 public class ConfigUtil {
 
@@ -39,7 +38,7 @@ public class ConfigUtil {
 
     /**
      * 以配置文件的方式初始化
-     * 
+     *
      * @param filePath
      * @return
      */
@@ -52,18 +51,15 @@ public class ConfigUtil {
 
     /**
      * 以参数方式初始化
-     * 
+     *
      * @param appID
      * @param appSecKey
-     * @param encryptMethod
-     *            加密方法，默认是NONE
-     * @param signMethod
-     *            加签方法，Hash算法，支持：MD5/SHA/SHA-256/SHA-512，RSA算法
-     * @param requestUrl
-     *            请求地址，默认是http://secapi.hulubank.com.cn
+     * @param encryptMethod 加密方法，默认是NONE
+     * @param signMethod    加签方法，Hash算法，支持：MD5/SHA/SHA-256/SHA-512，RSA算法
+     * @param requestUrl    请求地址，默认是http://secapi.hulubank.com.cn
      */
     public final synchronized static void initConfig(String appID, String appSecKey, String encryptMethod,
-            String signMethod, String requestUrl, String aesKey, String privateKey, String publicKey) {
+                                                     String signMethod, String requestUrl, String aesKey, String privateKey, String publicKey) {
         if (configUtil == null) {
             properties.setProperty("appID", appID);
             properties.setProperty("appSecKey", appSecKey);

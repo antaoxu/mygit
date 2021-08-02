@@ -31,73 +31,73 @@ import org.apache.http.util.EntityUtils;
  */
 
 public class HttpsClientDemo {
-	
-	static String httpurl = "https://devopen.shrbank.com:7443/secapi/user/getVeriCode";
-	static String certfile = "/Users/abc/Documents/open.pfx";
-	static String pwd = "123456";
 
-	public final static void main(String[] args) throws Exception {
+    static String httpurl = "https://devopen.shrbank.com:7443/secapi/user/getVeriCode";
+    static String certfile = "/Users/abc/Documents/open.pfx";
+    static String pwd = "123456";
 
-		KeyStore keyStore = KeyStore.getInstance("PKCS12");
+    public final static void main(String[] args) throws Exception {
 
-		FileInputStream instream = new FileInputStream(new File(certfile));
-		try {
-			keyStore.load(instream, pwd.toCharArray());
-		} finally {
-			instream.close();
-		}
+        KeyStore keyStore = KeyStore.getInstance("PKCS12");
 
-		// Trust own CA and all self-signed certs
-		SSLContext sslcontext = SSLContexts.custom().loadKeyMaterial(keyStore, pwd.toCharArray()).build();
+        FileInputStream instream = new FileInputStream(new File(certfile));
+        try {
+            keyStore.load(instream, pwd.toCharArray());
+        } finally {
+            instream.close();
+        }
 
-		// Allow TLSv1 protocol only
-		SSLConnectionSocketFactory sslsf = new SSLConnectionSocketFactory(sslcontext, new String[] { "TLSv1.2" }, null,
-				// SSLConnectionSocketFactory.BROWSER_COMPATIBLE_HOSTNAME_VERIFIER);
-				SSLConnectionSocketFactory.getDefaultHostnameVerifier());
+        // Trust own CA and all self-signed certs
+        SSLContext sslcontext = SSLContexts.custom().loadKeyMaterial(keyStore, pwd.toCharArray()).build();
 
-		Registry<ConnectionSocketFactory> socketFactoryRegistry = RegistryBuilder.<ConnectionSocketFactory>create()
-				// .register("http", PlainConnectionSocketFactory.INSTANCE)
-				.register("https", sslsf).build();
+        // Allow TLSv1 protocol only
+        SSLConnectionSocketFactory sslsf = new SSLConnectionSocketFactory(sslcontext, new String[]{"TLSv1.2"}, null,
+                // SSLConnectionSocketFactory.BROWSER_COMPATIBLE_HOSTNAME_VERIFIER);
+                SSLConnectionSocketFactory.getDefaultHostnameVerifier());
 
-		PoolingHttpClientConnectionManager cm = new PoolingHttpClientConnectionManager(socketFactoryRegistry);
-		cm.setMaxTotal(200);
-		cm.setDefaultMaxPerRoute(200);
+        Registry<ConnectionSocketFactory> socketFactoryRegistry = RegistryBuilder.<ConnectionSocketFactory>create()
+                // .register("http", PlainConnectionSocketFactory.INSTANCE)
+                .register("https", sslsf).build();
 
-		CloseableHttpClient httpclient = HttpClients.custom().setConnectionManager(cm).setConnectionManagerShared(true).build();
-		CloseableHttpResponse response = null;
+        PoolingHttpClientConnectionManager cm = new PoolingHttpClientConnectionManager(socketFactoryRegistry);
+        cm.setMaxTotal(200);
+        cm.setDefaultMaxPerRoute(200);
 
-		System.out.println("Test start-------------------->");
-		try {
-			HttpPost post = new HttpPost(httpurl);
-			// 设置请求的配置
-			RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(6000).build();
-			post.setConfig(requestConfig);
-			
-			StringEntity se = new StringEntity("msg");
-			post.setEntity(se);
-			post.addHeader("Content-Type", "application/json; charset=UTF-8");
-			
-			response = httpclient.execute(post);
-			HttpEntity entity = response.getEntity();
-			if (entity != null) {
-				BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(entity.getContent()));
-				String text;
-				while ((text = bufferedReader.readLine()) != null) {
-					System.out.println(text);
-				}
-			}
-			EntityUtils.consume(entity);
-		}catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				response.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			cm.close();
-		}
-		System.out.println("Test end<--------------------");
-	}
+        CloseableHttpClient httpclient = HttpClients.custom().setConnectionManager(cm).setConnectionManagerShared(true).build();
+        CloseableHttpResponse response = null;
+
+        System.out.println("Test start-------------------->");
+        try {
+            HttpPost post = new HttpPost(httpurl);
+            // 设置请求的配置
+            RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(6000).build();
+            post.setConfig(requestConfig);
+
+            StringEntity se = new StringEntity("msg");
+            post.setEntity(se);
+            post.addHeader("Content-Type", "application/json; charset=UTF-8");
+
+            response = httpclient.execute(post);
+            HttpEntity entity = response.getEntity();
+            if (entity != null) {
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(entity.getContent()));
+                String text;
+                while ((text = bufferedReader.readLine()) != null) {
+                    System.out.println(text);
+                }
+            }
+            EntityUtils.consume(entity);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                response.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            cm.close();
+        }
+        System.out.println("Test end<--------------------");
+    }
 
 }

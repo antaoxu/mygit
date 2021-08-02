@@ -4,14 +4,14 @@ import com.shrb.hop.beans.ResponseBody;
 
 public class BalanceQueryRsp extends ResponseBody {
 
-	private String balanceAmt;
+    private String balanceAmt;
 
-	public String getBalanceAmt() {
-		return balanceAmt;
-	}
+    public String getBalanceAmt() {
+        return balanceAmt;
+    }
 
-	public void setBalanceAmt(String balanceAmt) {
-		this.balanceAmt = balanceAmt;
-	}
+    public void setBalanceAmt(String balanceAmt) {
+        this.balanceAmt = balanceAmt;
+    }
 
 }

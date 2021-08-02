@@ -19,9 +19,9 @@ public class MyRequest {
         int lenth = 0;
         //定义读取数据字符串
         String str = "";
-        if((lenth = inputStream.read(buffer))>0){
-            str = new String(buffer,0,lenth);
-            System.out.println("请求数据为：\n"+str);
+        if ((lenth = inputStream.read(buffer)) > 0) {
+            str = new String(buffer, 0, lenth);
+            System.out.println("请求数据为：\n" + str);
         }
         //GET / HTTP/1.0
         String data = str.split("\n")[0];

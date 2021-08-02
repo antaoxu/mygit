@@ -1,5 +1,7 @@
 package com.xat;
 
+import sun.net.www.http.HttpClient;
+
 import java.io.IOException;
 
 /**
@@ -18,15 +20,17 @@ public class MyServlet implements MyHttpServlet {
 
     /**
      * 根据请求方式来判断执行哪种方法
+     *
      * @param request
      * @param response
      */
     @Override
     public void service(MyRequest request, MyResponse response) throws IOException {
-        if(METHOD_GET.equals(request.getRequestMethod())){
-            doGet(request,response);
-        }else if(METHOD_POST.equals(request.getRequestMethod())){
-            doPost(request,response);
+        if (METHOD_GET.equals(request.getRequestMethod())) {
+            doGet(request, response);
+        } else if (METHOD_POST.equals(request.getRequestMethod())) {
+            doPost(request, response);
         }
     }
+
 }

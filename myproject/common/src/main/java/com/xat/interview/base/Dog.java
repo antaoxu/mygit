@@ -1,8 +1,8 @@
 package com.xat.interview.base;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
 
-    public Dog(String name, int age){
+    public Dog(String name, int age) {
         //super(name, age);
     }
 

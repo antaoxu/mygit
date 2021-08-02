@@ -5,113 +5,112 @@ import com.shrb.hop.annotation.NotNull;
 
 /**
  * 公共头
- * 
- * @author duxiaoyang
+ *
  * @param <T>
- * 
+ * @author duxiaoyang
  */
 public class ResponseBean<T extends ResponseBody> implements Bean {
 
-	@NotNull(message = "appID不能为空")
-	private String appID;
+    @NotNull(message = "appID不能为空")
+    private String appID;
 
-	@NotNull(message = "encryptMethod不能为空")
-	private String encryptMethod;
+    @NotNull(message = "encryptMethod不能为空")
+    private String encryptMethod;
 
-	private String errorCode;
+    private String errorCode;
 
-	private String errorMsg;
+    private String errorMsg;
 
-	private String liveMode;
+    private String liveMode;
 
-	private String noticeType;
+    private String noticeType;
 
-	@NotNull(message = "returnCode不能为空")
-	private String returnCode;
+    @NotNull(message = "returnCode不能为空")
+    private String returnCode;
 
-	private String returnMsg;
+    private String returnMsg;
 
-//	private ResponseBody rspData;
-	private T rspData;
+    //	private ResponseBody rspData;
+    private T rspData;
 
-	@NotNull(message = "sequenceID不能为空")
-	private String sequenceID;
+    @NotNull(message = "sequenceID不能为空")
+    private String sequenceID;
 
-	private String settlementDate;
+    private String settlementDate;
 
-	private String sign;
+    private String sign;
 
-	@NotNull(message = "signMethod不能为空")
-	private String signMethod;
+    @NotNull(message = "signMethod不能为空")
+    private String signMethod;
 
-	public String getAppID() {
-		return appID;
-	}
+    public String getAppID() {
+        return appID;
+    }
 
-	public void setAppID(String appID) {
-		this.appID = appID;
-	}
+    public void setAppID(String appID) {
+        this.appID = appID;
+    }
 
-	public String getEncryptMethod() {
-		return encryptMethod;
-	}
+    public String getEncryptMethod() {
+        return encryptMethod;
+    }
 
-	public void setEncryptMethod(String encryptMethod) {
-		this.encryptMethod = encryptMethod;
-	}
+    public void setEncryptMethod(String encryptMethod) {
+        this.encryptMethod = encryptMethod;
+    }
 
-	public String getErrorCode() {
-		return errorCode;
-	}
+    public String getErrorCode() {
+        return errorCode;
+    }
 
-	public void setErrorCode(String errorCode) {
-		this.errorCode = errorCode;
-	}
+    public void setErrorCode(String errorCode) {
+        this.errorCode = errorCode;
+    }
 
-	public String getErrorMsg() {
-		return errorMsg;
-	}
+    public String getErrorMsg() {
+        return errorMsg;
+    }
 
-	public void setErrorMsg(String errorMsg) {
-		this.errorMsg = errorMsg;
-	}
+    public void setErrorMsg(String errorMsg) {
+        this.errorMsg = errorMsg;
+    }
 
-	public String getLiveMode() {
-		return liveMode;
-	}
+    public String getLiveMode() {
+        return liveMode;
+    }
 
-	public void setLiveMode(String liveMode) {
-		this.liveMode = liveMode;
-	}
+    public void setLiveMode(String liveMode) {
+        this.liveMode = liveMode;
+    }
 
-	public String getNoticeType() {
-		return noticeType;
-	}
+    public String getNoticeType() {
+        return noticeType;
+    }
 
-	public void setNoticeType(String noticeType) {
-		this.noticeType = noticeType;
-	}
+    public void setNoticeType(String noticeType) {
+        this.noticeType = noticeType;
+    }
 
-	public String getReturnCode() {
-		return returnCode;
-	}
+    public String getReturnCode() {
+        return returnCode;
+    }
 
-	public void setReturnCode(String returnCode) {
-		this.returnCode = returnCode;
-	}
+    public void setReturnCode(String returnCode) {
+        this.returnCode = returnCode;
+    }
 
-	public String getReturnMsg() {
-		return returnMsg;
-	}
+    public String getReturnMsg() {
+        return returnMsg;
+    }
 
-	public void setReturnMsg(String returnMsg) {
-		this.returnMsg = returnMsg;
-	}
+    public void setReturnMsg(String returnMsg) {
+        this.returnMsg = returnMsg;
+    }
 
-	public T getRspData() {
-		return rspData;
-	}
-	
+    public T getRspData() {
+        return rspData;
+    }
+
 //	public ResponseBody getRspData() {
 //		return rspData;
 //	}
@@ -119,41 +118,41 @@ public class ResponseBean<T extends ResponseBody> implements Bean {
 //	public void setRspData(ResponseBody rspData) {
 //		this.rspData = rspData;
 //	}
-	
-	public void setRspData(T rspData) {
-		this.rspData = rspData;
-	}
 
-	public String getSequenceID() {
-		return sequenceID;
-	}
+    public void setRspData(T rspData) {
+        this.rspData = rspData;
+    }
 
-	public void setSequenceID(String sequenceID) {
-		this.sequenceID = sequenceID;
-	}
+    public String getSequenceID() {
+        return sequenceID;
+    }
 
-	public String getSettlementDate() {
-		return settlementDate;
-	}
+    public void setSequenceID(String sequenceID) {
+        this.sequenceID = sequenceID;
+    }
 
-	public void setSettlementDate(String settlementDate) {
-		this.settlementDate = settlementDate;
-	}
+    public String getSettlementDate() {
+        return settlementDate;
+    }
 
-	public String getSign() {
-		return sign;
-	}
+    public void setSettlementDate(String settlementDate) {
+        this.settlementDate = settlementDate;
+    }
 
-	public void setSign(String sign) {
-		this.sign = sign;
-	}
+    public String getSign() {
+        return sign;
+    }
 
-	public String getSignMethod() {
-		return signMethod;
-	}
+    public void setSign(String sign) {
+        this.sign = sign;
+    }
 
-	public void setSignMethod(String signMethod) {
-		this.signMethod = signMethod;
-	}
+    public String getSignMethod() {
+        return signMethod;
+    }
+
+    public void setSignMethod(String signMethod) {
+        this.signMethod = signMethod;
+    }
 
 }

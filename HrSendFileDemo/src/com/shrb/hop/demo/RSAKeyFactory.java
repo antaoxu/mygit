@@ -9,7 +9,7 @@ public class RSAKeyFactory {
         Map<String, Object> map = RSAUtils.genKeyPair();
         String publicKey = RSAUtils.getPublicKey(map);
         String privateKey = RSAUtils.getPrivateKey(map);
-        System.out.println("publicKey:\n"+publicKey);
-        System.out.println("privateKey:\n"+privateKey);
+        System.out.println("publicKey:\n" + publicKey);
+        System.out.println("privateKey:\n" + privateKey);
     }
 }

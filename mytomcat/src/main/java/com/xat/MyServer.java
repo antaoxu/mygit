@@ -18,7 +18,7 @@ public class MyServer {
         ServerSocket serverSocket = new ServerSocket(port);
         //定义客户端套接字
         Socket socket = null;
-        while (true){
+        while (true) {
             socket = serverSocket.accept();
             //获取输入输出流
             InputStream inputStream = socket.getInputStream();
@@ -29,10 +29,10 @@ public class MyServer {
             MyResponse response = new MyResponse(outputStream);
 
             String clazz = new MyMapping().getMapping().get(request.getRequestUrl());
-            if(clazz != null){
+            if (clazz != null) {
                 Class<MyServlet> aClass = (Class<MyServlet>) Class.forName(clazz);
                 MyServlet myServlet = aClass.newInstance();
-                myServlet.service(request,response);
+                myServlet.service(request, response);
             }
         }
     }

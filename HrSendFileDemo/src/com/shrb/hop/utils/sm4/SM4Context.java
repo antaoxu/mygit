@@ -1,15 +1,15 @@
 package com.shrb.hop.utils.sm4;
 
 public class SM4Context {
-	public int mode;
+    public int mode;
 
-	public int[] sk;
+    public int[] sk;
 
-	public boolean isPadding;
+    public boolean isPadding;
 
-	public SM4Context() {
-		this.mode = 1;
-		this.isPadding = true;
-		this.sk = new int[32];
-	}
+    public SM4Context() {
+        this.mode = 1;
+        this.isPadding = true;
+        this.sk = new int[32];
+    }
 }

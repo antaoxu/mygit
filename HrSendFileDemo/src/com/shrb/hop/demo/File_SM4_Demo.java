@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -30,21 +31,21 @@ import com.shrb.hop.utils.sm4.SM4Utils;
  * 文件hash算法同加签算法一致，老用户取全文件hash，新用户取文件前1MB内容hash
  * 支持AES/SM4文件加密算法，也可以不加密
  * SM4加密算法中，支持ECB/CBC两种加密模式，CBC模式需要设置初始化向量
- * @author zhongzijie
  *
+ * @author zhongzijie
  */
 public class File_SM4_Demo {
     private static final Log log = LogFactory.getLog(File_SM4_Demo.class);
     /**
      * 设置文件最大加签为1MB，仅对新用户生效，老用户全文件加签
      */
-    public static final int MAX_HASH_FILE_SIZE = 1024*1024;
+    public static final int MAX_HASH_FILE_SIZE = 1024 * 1024;
     /**
      * true-老用户，false-新用户
      */
     public static final String OLD_FLAG = "false";
     /**
-     *  设置文件hash算法和加签算法（MD5/SM3）,该字段只有新用户有效，老用户固定MD5
+     * 设置文件hash算法和加签算法（MD5/SM3）,该字段只有新用户有效，老用户固定MD5
      */
     public static final String HASH_FILE_METHOD = "SM3";
     /**
@@ -72,9 +73,9 @@ public class File_SM4_Demo {
      */
     public static final String CUSTOMIZE_UPLOAD_FILE_PATH = "308501/PARTNERRECORDFILE/20210128";
     /**
-    上传接口实际上送的filePath
+     * 上传接口实际上送的filePath
      */
-    public static final String UPLOAD_FILE_PATH = IS_CUSTOMIZE_UPLOAD_FILE_PATH?CUSTOMIZE_UPLOAD_FILE_PATH:"";
+    public static final String UPLOAD_FILE_PATH = IS_CUSTOMIZE_UPLOAD_FILE_PATH ? CUSTOMIZE_UPLOAD_FILE_PATH : "";
 
 
     public static void uploadFile() throws Exception {
@@ -88,13 +89,13 @@ public class File_SM4_Demo {
         // 文件密钥：合作方的文件密钥由华瑞侧生成并提供，对合作方而言，所有测试环境文件密钥为同一个，但生产环境文件密钥会单独给出
         String key = ENCRY_FILE_KEY;
         String uploadFilePath = "";
-        if("AES".equalsIgnoreCase(ENCRY_FILE_METHOD)){
+        if ("AES".equalsIgnoreCase(ENCRY_FILE_METHOD)) {
             FileUtil.operateFile("0", new File(srcPath), destPath, key);
             uploadFilePath = destPath;
-        }else if("SM4".equalsIgnoreCase(ENCRY_FILE_METHOD)){
-            if("ECB".equalsIgnoreCase(ENCRY_FILE_MODE)){
-                FileUtil.operatedFile("0", srcPath, destPath,key);
-            }else if("CBC".equalsIgnoreCase(ENCRY_FILE_MODE)){
+        } else if ("SM4".equalsIgnoreCase(ENCRY_FILE_METHOD)) {
+            if ("ECB".equalsIgnoreCase(ENCRY_FILE_MODE)) {
+                FileUtil.operatedFile("0", srcPath, destPath, key);
+            } else if ("CBC".equalsIgnoreCase(ENCRY_FILE_MODE)) {
                 byte[] content = FileUtils.readFileToByteArray(new File(srcPath));
                 byte[] result = null;
                 SM4Utils sm4 = new SM4Utils();
@@ -102,13 +103,13 @@ public class File_SM4_Demo {
                 sm4.iv = ENCRY_FILE_INIT_VECTOR;
                 result = sm4.encryptData_CBC(content);
                 FileUtils.writeByteArrayToFile(new File(destPath), result);
-            }else{
+            } else {
                 System.out.println("加密模式设置错误");
                 return;
             }
 
             uploadFilePath = destPath;
-        }else{
+        } else {
             uploadFilePath = srcPath;
         }
 
@@ -133,16 +134,16 @@ public class File_SM4_Demo {
         try {
             byte[] content = FileUtils.readFileToByteArray(file);
             //判断加密文件是否大于1MB，大于则取前1MB加签，反之则全文件加签
-            if("false".equals(OLD_FLAG)) {
+            if ("false".equals(OLD_FLAG)) {
                 hash = SignUtil.getHashHexByNew(content, hashFileMethod);
             }
-            if("true".equals(OLD_FLAG)) {
+            if ("true".equals(OLD_FLAG)) {
                 hash = SignUtil.getHashHexByOld(content);
                 //若是老用户，则加签方式固定为MD5
-               hashFileMethod = "MD5";
-             }
+                hashFileMethod = "MD5";
+            }
 
-            System.out.println("hash值为："+hash);
+            System.out.println("hash值为：" + hash);
             StringBuilder sb = new StringBuilder();
             sb.append("appID=" + appID + "&");
             sb.append("transcode=" + transcode + "&");
@@ -150,10 +151,10 @@ public class File_SM4_Demo {
             sb.append("appSecret=" + appSecret + "&");
             sb.append("hash=" + hash);
             String signMsg = sb.toString();
-            if("MD5".equals(hashFileMethod)) {
+            if ("MD5".equals(hashFileMethod)) {
                 sign = SignUtil.sign(signMsg.getBytes(), "md5", "").toLowerCase();
             }
-            if("SM3".equals(hashFileMethod)) {
+            if ("SM3".equals(hashFileMethod)) {
                 sign = SM3Util.getSm3HexStr(signMsg.getBytes("UTF-8"));
             }
 
@@ -180,7 +181,7 @@ public class File_SM4_Demo {
             int code = response.getStatusLine().getStatusCode();
             if (code != 200) {
                 log.error("上传失败,响应码:" + response.getStatusLine().getStatusCode());
-            }else{
+            } else {
                 System.out.println("success");
             }
 
@@ -201,7 +202,7 @@ public class File_SM4_Demo {
 
     public static void downLoadFile() {
         String hashFileMethod = HASH_FILE_METHOD;
-        if("true".equals(OLD_FLAG)) {
+        if ("true".equals(OLD_FLAG)) {
             //若是老用户，则加签方式固定为MD5
             hashFileMethod = "MD5";
         }
@@ -235,10 +236,10 @@ public class File_SM4_Demo {
         String signMsg = sb.toString();
         String sign = null;
         try {
-            if("MD5".equals(hashFileMethod)) {
+            if ("MD5".equals(hashFileMethod)) {
                 sign = SignUtil.sign(signMsg.getBytes(), "md5", "").toLowerCase();
             }
-            if("SM3".equals(hashFileMethod)) {
+            if ("SM3".equals(hashFileMethod)) {
                 sign = SM3Util.getSm3HexStr(signMsg.getBytes("UTF-8"));
             }
         } catch (Exception e1) {
@@ -315,11 +316,11 @@ public class File_SM4_Demo {
             }
         }
 
-        if(status==200) {
-            if("AES".equalsIgnoreCase(ENCRY_FILE_METHOD)){
+        if (status == 200) {
+            if ("AES".equalsIgnoreCase(ENCRY_FILE_METHOD)) {
                 FileUtil.operateFile("1", new File(srcPath), destPath, secretKey);
-            }else if("SM4".equalsIgnoreCase(ENCRY_FILE_METHOD)){
-                FileUtil.operatedFile("1", srcPath, destPath,secretKey);
+            } else if ("SM4".equalsIgnoreCase(ENCRY_FILE_METHOD)) {
+                FileUtil.operatedFile("1", srcPath, destPath, secretKey);
             }
 
             System.out.println("success");

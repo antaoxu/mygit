@@ -16,7 +16,7 @@ public class DateTest {
         Date date = format.parse("20210614");
         String date1 = format1.format(date);
         String time = new SimpleDateFormat("HH:mm:ss").format(new Date());
-        dateTime = date1 + " "+time;
+        dateTime = date1 + " " + time;
         System.out.println(dateTime.toString());
         return dateTime;
     }

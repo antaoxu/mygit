@@ -9,10 +9,10 @@ public class MyMapping {
     public static HashMap<String, String> mapping = new HashMap<>();
 
     static {
-        mapping.put("/tomcat","com.xat.MyServlet");
+        mapping.put("/tomcat", "com.xat.MyServlet");
     }
 
-    public HashMap<String, String> getMapping(){
+    public HashMap<String, String> getMapping() {
         return mapping;
     }
 

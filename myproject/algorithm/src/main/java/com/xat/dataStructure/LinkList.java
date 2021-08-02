@@ -10,13 +10,13 @@ import java.util.Stack;
 public class LinkList {
 
 
-    private static class Node<E>{
+    private static class Node<E> {
         E item;
         Node<E> next;
 
-         Node(E element,Node<E> next){
-             this.item=element;
-             this.next=next;
+        Node(E element, Node<E> next) {
+            this.item = element;
+            this.next = next;
         }
     }
 
@@ -25,12 +25,11 @@ public class LinkList {
         linkedList.add("甲");
         linkedList.add("乙");
         linkedList.add("丙");
-        while (!linkedList.isEmpty()){
+        while (!linkedList.isEmpty()) {
             System.out.println(linkedList.pollLast());
         }
 
     }
-
 
 
 }

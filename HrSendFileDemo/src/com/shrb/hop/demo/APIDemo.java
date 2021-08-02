@@ -52,9 +52,8 @@ public class APIDemo {
      * @URL 合作方请求华瑞的接口地址
      * @AES_PRIVATE_KEY AES密钥
      * @RSA_PRIVATE_KEY 请求加签私钥，base64编码，2048位，PKCS8格式
-     * @RSA_PUBLIC_KEY  请求验签公钥，base64编码，2048位，PKCS8格式
-     * @RSA256_PUB_KEY  返回验签公钥，由华瑞银行开放平台提供，若appID为自己在华瑞开放平台门户网站注册，则自行登录门户网站进入应用查看
-     *
+     * @RSA_PUBLIC_KEY 请求验签公钥，base64编码，2048位，PKCS8格式
+     * @RSA256_PUB_KEY 返回验签公钥，由华瑞银行开放平台提供，若appID为自己在华瑞开放平台门户网站注册，则自行登录门户网站进入应用查看
      */
 
     private static final String URL = "https://devopen.shrbank.com:4443/secapi/user/getVeriCode";
@@ -107,21 +106,22 @@ public class APIDemo {
         request.put("sequenceID", sequenceId);
         JSONObject reqData = new JSONObject();
         reqData.put("bindTel", "15295527304");
-        reqData.put("operateType","0");
+        reqData.put("operateType", "0");
         //reqData.put("productId", "201104001572");
         request.put("reqData", reqData);
-        System.out.println("待加密字符串为："+reqData.toJSONString());
+        System.out.println("待加密字符串为：" + reqData.toJSONString());
         String reqBody = aesEncrypt(reqData.toJSONString());
         request.put("reqData", reqBody);
-        System.out.println("加密后字符串为："+reqBody);
+        System.out.println("加密后字符串为：" + reqBody);
         String tobeSign = reqBody + sequenceId;
-        System.out.println("待加签字符串为："+tobeSign);
+        System.out.println("待加签字符串为：" + tobeSign);
         request.put("sign", getRsaSign(RSA_PRIVATE_KEY, tobeSign));
         return request.toJSONString();
     }
 
     /**
      * AES加密
+     *
      * @param content 需要加密的内容
      * @return 加密之后的结果
      */
@@ -173,6 +173,7 @@ public class APIDemo {
 
     /**
      * 对一段String生成RSA加签
+     *
      * @param rsaPrivateKey 私钥
      * @param message       参数内容
      * @return 签名后的内容，base64后的字符串
