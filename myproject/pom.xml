@@ -18,11 +18,7 @@
             <artifactId>aliyun-sdk-oss</artifactId>
             <version>3.10.2</version>
         </dependency>
-        <dependency>
-            <groupId>com.alipay.sofa</groupId>
-            <artifactId>sofa-boot-starters</artifactId>
-            <version>3.6.0</version>
-        </dependency>
+
     </dependencies>
 
 

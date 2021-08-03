@@ -13,8 +13,8 @@ public class EvenTimesOddTimes {
      */
     public static void printOddTimesNum(int[] arr) {
         int eor = 0;
-        for (int i = 0; i < arr.length; i++) {
-            eor ^= arr[i];
+        for (int j : arr) {
+            eor ^= j;
         }
         System.out.println(eor);
     }
@@ -30,36 +30,36 @@ public class EvenTimesOddTimes {
      */
     public static void printTwoOddTimesNmus(int[] arr) {
         int eor = 0;
-        for (int i = 0; i < arr.length; i++) {
-            eor ^= arr[i];
+        for (int j :arr) {
+            eor ^= arr[j];
         }
         //提取出最右的1
         int lastRightOne = eor & (~eor + 1);
         //int lastRightOne = eor &(-eor);
-        //再定义一个变量eor1 =0
         int oneOddNum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if ((arr[i] & lastRightOne) != 0) {
-                oneOddNum ^= arr[i];
+        for (int j: arr) {
+            if ((arr[j] & lastRightOne) != 0) {
+                oneOddNum ^= arr[j];
             }
         }
         int otherOddNum = eor ^ oneOddNum;
         System.out.println("数组中出现了奇数次的其中一个数为：" + oneOddNum + "另一个数为：" + otherOddNum);
     }
 
-    public static int bit1counts(int N) {
+    public static int bit1counts(int number) {
         int count = 0;
 
         //   011011010000
         //   000000010000     1
         //   011011000000
         //
-        while (N != 0) {
-            int rightOne = N & ((~N) + 1);
+        while (number != 0) {
+            int rightOne = number & ((~number) + 1);
+            System.out.println(rightOne);
             count++;
-            N ^= rightOne;
+            number ^= rightOne;
             // N -= rightOne
-            System.out.println(count + "  N:" + N);
+            System.out.println(count + "  Number:" + number);
         }
 
         return count;
@@ -69,9 +69,9 @@ public class EvenTimesOddTimes {
 
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 2, 3, 3, 4, 4, 5, 5, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 7, 7, 8};
-        //printOddTimesNum(arr);
+        int[] arr = {1, 1, 9, 2, 2, 3, 3, 4, 4, 5, 5, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 7, 7};
+        printOddTimesNum(arr);
         //printTwoOddTimesNmus(arr);
-        bit1counts(7);
+        //bit1counts(4);
     }
 }

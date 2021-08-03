@@ -5,154 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="437fb6f5-fdf2-496e-a295-9f4bf363ab5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/utils/OssUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/beans/Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/beans/Bean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/beans/RequestBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/beans/RequestBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/beans/ResponseBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/beans/ResponseBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/beans/account/BalanceQueryReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/beans/account/BalanceQueryReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/beans/account/BalanceQueryRsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/beans/account/BalanceQueryRsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/demo/APIDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/demo/APIDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/demo/File_SM4_Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/demo/File_SM4_Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/demo/RSAKeyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/demo/RSAKeyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/https/HttpsClientDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/https/HttpsClientDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/service/Api.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/service/Api.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/service/ApiInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/service/ApiInvoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/service/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/AESUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/AESUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/Base64Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/Base64Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/BeanEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/BeanEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/ConfigUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/ConfigUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/HttpClientUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/RSAUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/RSAUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/SM3Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/SM3Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/SequenceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/SequenceUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/SignUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/SignUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/ValidateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/ValidateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/sm4/SM4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/sm4/SM4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/sm4/SM4Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/sm4/SM4Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/sm4/SM4Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HrSendFileDemo/src/com/shrb/hop/utils/sm4/SM4Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my-program/account/src/main/java/AccountSoftware.java" beforeDir="false" afterPath="$PROJECT_DIR$/../my-program/account/src/main/java/AccountSoftware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/thread/ThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/thread/ThreadTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/thread/ThreadTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/xat/class01/EvenTimesOddTimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/xat/class01/EvenTimesOddTimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/xat/class01/ExchangeTwoNums.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/xat/class01/ExchangeTwoNums.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/xat/dataStructure/LinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/xat/dataStructure/LinkList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/xat/leetCode/IntInverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/xat/leetCode/IntInverse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/src/main/java/com/xat/leetCode/RemoveDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/xat/leetCode/RemoveDuplicates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/ArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/ArrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/DateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/DateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/StringToInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/StringToInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/base/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/proxy/StaticProxyMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/interview/proxy/StaticProxyMovie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/xat/servlet/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/xat/servlet/MyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/target/classes/com/xat/class01/EvenTimesOddTimes.class" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/target/classes/com/xat/class01/EvenTimesOddTimes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/target/classes/com/xat/leetCode/RemoveDuplicates.class" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/target/classes/com/xat/leetCode/RemoveDuplicates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/xat/interview/base/ArrayTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/xat/interview/base/ArrayTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/xat/interview/base/StringToInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/xat/interview/base/StringToInt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/xat/interview/proxy/StaticProxyMovie.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/xat/interview/proxy/StaticProxyMovie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/xat/servlet/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/xat/servlet/MyServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mytomcat/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mytomcat/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyHttpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyHttpServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mytomcat/src/main/java/com/xat/MyServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../renren-fast" beforeDir="false" afterPath="$PROJECT_DIR$/../renren-fast" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sofaboot/src/main/java/com/xat/sofaboot/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sofaboot/src/main/java/com/xat/sofaboot/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sofaboot/src/main/java/com/xat/sofaboot/service/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sofaboot/src/main/java/com/xat/sofaboot/service/HelloServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sofaboot/src/test/java/com/xat/sofaboot/SofabootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sofaboot/src/test/java/com/xat/sofaboot/SofabootApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class01/Code01_SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class01/Code01_SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class01/Code02_BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class01/Code02_BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class01/Code03_InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class01/Code03_InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class01/Code04_BSExist.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class01/Code04_BSExist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class01/Code05_BSNearLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class01/Code05_BSNearLeft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class01/Code05_BSNearRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class01/Code05_BSNearRight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class01/Code06_BSAwesome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class01/Code06_BSAwesome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class01/Code07_EvenTimesOddTimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class01/Code07_EvenTimesOddTimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class01/Code08_KM.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class01/Code08_KM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class01/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class01/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class02/Code01_ReverseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class02/Code01_ReverseList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class02/Code02_DeleteGivenValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class02/Code02_DeleteGivenValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class02/Code03_DoubleEndsQueueToStackAndQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class02/Code03_DoubleEndsQueueToStackAndQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class02/Code04_RingArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class02/Code04_RingArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class02/Code05_GetMinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class02/Code05_GetMinStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class02/Code06_TwoStacksImplementQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class02/Code06_TwoStacksImplementQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class02/Code07_TwoQueueImplementStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class02/Code07_TwoQueueImplementStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class02/Code08_GetMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class02/Code08_GetMax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class02/HashMapAndSortedMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class02/HashMapAndSortedMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class03/Code01_MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class03/Code01_MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class03/Code02_SmallSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class03/Code02_SmallSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class03/Code03_ReversePair.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class03/Code03_ReversePair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class03/Code04_BiggerThanRightTwice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class03/Code04_BiggerThanRightTwice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class03/Code05_CountOfRangeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class03/Code05_CountOfRangeSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class03/Code06_PartitionAndQuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class03/Code06_PartitionAndQuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class03/Code07_QuickSortRecursiveAndUnrecursive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class03/Code07_QuickSortRecursiveAndUnrecursive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class04/Code01_Comparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class04/Code01_Comparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class04/Code02_Heap01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class04/Code02_Heap01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class04/Code03_Heap02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class04/Code03_Heap02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class04/Code04_HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class04/Code04_HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class04/Code05_SortArrayDistanceLessK.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class04/Code05_SortArrayDistanceLessK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class04/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class04/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class05/Code01_TrieTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class05/Code01_TrieTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class05/Code02_TrieTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class05/Code02_TrieTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class05/Code03_CountSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class05/Code03_CountSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class05/Code04_RadixSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class05/Code04_RadixSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class06/Code01_LinkedListMid.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class06/Code01_LinkedListMid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class06/Code02_IsPalindromeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class06/Code02_IsPalindromeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class06/Code03_SmallerEqualBigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class06/Code03_SmallerEqualBigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class06/Code04_CopyListWithRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class06/Code04_CopyListWithRandom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class06/Code05_FindFirstIntersectNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class06/Code05_FindFirstIntersectNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class06/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class06/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class07/Code01_RecursiveTraversalBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class07/Code01_RecursiveTraversalBT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class07/Code02_UnRecursiveTraversalBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class07/Code02_UnRecursiveTraversalBT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class07/Code03_LevelTraversalBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class07/Code03_LevelTraversalBT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class07/Code04_SerializeAndReconstructTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class07/Code04_SerializeAndReconstructTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class07/Code05_PrintBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class07/Code05_PrintBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class07/Code06_TreeMaxWidth.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class07/Code06_TreeMaxWidth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class07/Code07_SuccessorNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class07/Code07_SuccessorNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class07/Code08_PaperFolding.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class07/Code08_PaperFolding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class08/Code01_IsBalanced.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class08/Code01_IsBalanced.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class08/Code02_IsFull.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class08/Code02_IsFull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class08/Code03_IsBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class08/Code03_IsBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class08/Code04_MaxSubBSTSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class08/Code04_MaxSubBSTSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class08/Code05_MaxSubBSTHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class08/Code05_MaxSubBSTHead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class08/Code06_IsCBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class08/Code06_IsCBT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class08/Code07_lowestAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class08/Code07_lowestAncestor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class08/Code08_MaxDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class08/Code08_MaxDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class08/Code09_MaxHappy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class08/Code09_MaxHappy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class09/Code01_LowestLexicography.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class09/Code01_LowestLexicography.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class09/Code02_Light.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class09/Code02_Light.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class09/Code03_LessMoneySplitGold.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class09/Code03_LessMoneySplitGold.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class09/Code04_BestArrange.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class09/Code04_BestArrange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class09/Code05_IPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class09/Code05_IPO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/Code01_UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/Code01_UnionFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/Code02_BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/Code02_BFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/Code02_DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/Code02_DFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/Code03_TopologySort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/Code03_TopologySort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/Code04_Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/Code04_Kruskal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/Code05_Prim.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/Code05_Prim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/Code06_Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/Code06_Dijkstra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/Code07_MergeUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/Code07_MergeUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/GraphGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/GraphGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class10/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class10/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class11/Code01_Hanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class11/Code01_Hanoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class11/Code02_PrintAllSubsquences.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class11/Code02_PrintAllSubsquences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class11/Code03_PrintAllPermutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class11/Code03_PrintAllPermutations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class11/Code04_ReverseStackUsingRecursive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class11/Code04_ReverseStackUsingRecursive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class11/Code06_ConvertToLetterString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class11/Code06_ConvertToLetterString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class11/Code07_Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class11/Code07_Knapsack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class11/Code08_CardsInLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class11/Code08_CardsInLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class11/Code09_NQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class11/Code09_NQueens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class12/Code01_RobotWalk.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class12/Code01_RobotWalk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class12/Code02_StickersToSpellWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class12/Code02_StickersToSpellWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class12/Code03_Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class12/Code03_Knapsack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class12/Code04_CardsInLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class12/Code04_CardsInLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class12/Code05_PalindromeSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class12/Code05_PalindromeSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class12/Code06_Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class12/Code06_Coffee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class12/Code07_HorseJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class12/Code07_HorseJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class12/Code08_MinPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class12/Code08_MinPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/src/class12/Code09_CoinsWay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../study/src/class12/Code09_CoinsWay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,18 +70,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.MyServlet">
-    <configuration name="DateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xat.interview.base.DateTest" />
-      <module name="common" />
+  <component name="RunManager" selected="Application.ThreadTest2">
+    <configuration name="EvenTimesOddTimes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xat.class01.EvenTimesOddTimes" />
+      <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xat.interview.base.*" />
+          <option name="PATTERN" value="com.xat.class01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -223,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xat.interview.base.Dog" />
-      <module name="common" />
+    <configuration name="ExchangeTwoNums" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xat.class01.ExchangeTwoNums" />
+      <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xat.interview.base.*" />
+          <option name="PATTERN" value="com.xat.class01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -249,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xat.leetCode.RemoveDuplicates" />
-      <module name="algorithm" />
+    <configuration name="ThreadTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xat.interview.thread.ThreadTest1" />
+      <module name="common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xat.leetCode.*" />
+          <option name="PATTERN" value="com.xat.interview.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -262,26 +128,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xat.interview.base.Test" />
+    <configuration name="ThreadTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xat.interview.thread.ThreadTest2" />
       <module name="common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xat.interview.base.*" />
+          <option name="PATTERN" value="com.xat.interview.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadTest2" />
+        <item itemvalue="Application.ThreadTest1" />
+        <item itemvalue="Application.ExchangeTwoNums" />
+        <item itemvalue="Application.EvenTimesOddTimes" />
         <item itemvalue="Application.MyServlet" />
-        <item itemvalue="Application.DateTest" />
-        <item itemvalue="Application.Dog" />
-        <item itemvalue="Application.RemoveDuplicates" />
-        <item itemvalue="Application.Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -310,6 +187,7 @@
       <workItem from="1624413112834" duration="49000" />
       <workItem from="1626937736467" duration="4923000" />
       <workItem from="1627457870086" duration="742000" />
+      <workItem from="1627869415757" duration="10831000" />
     </task>
     <servers />
   </component>
