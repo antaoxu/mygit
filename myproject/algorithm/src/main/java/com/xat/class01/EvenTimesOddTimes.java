@@ -67,11 +67,39 @@ public class EvenTimesOddTimes {
 
     }
 
+    public static int envenTimeOddTime(int[] arr){
+        int[] result = null;
+        int eor = 0;
+        for (int i = 0; i < arr.length; i++) {
+            eor ^= arr[i];
+        }
+        int rightOne = eor & (-eor);
+        int oneNumber = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if((arr[i] & rightOne) != 0){
+                oneNumber ^=arr[i];
+            }
+        }
+        int anotherNumber = oneNumber ^ eor;
+        System.out.println(oneNumber+"-----"+anotherNumber);
+        return 0;
+
+    }
+
 
     public static void main(String[] args) {
-        int[] arr = {1, 1, 9, 2, 2, 3, 3, 4, 4, 5, 5, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 7, 7};
-        printOddTimesNum(arr);
+        int[] arr = {1,1, 9, 2, 2, 3, 3, 4, 4, 5, 5,11, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 7, 7};
+        //printOddTimesNum(arr);
         //printTwoOddTimesNmus(arr);
         //bit1counts(4);
+        envenTimeOddTime(arr);
+
+
+        /**
+         * 0 0 1 1
+         * 1 1 0 0
+         * 1 1 0 1
+         */
+
     }
 }
